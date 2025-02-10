@@ -19,9 +19,9 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    <i class="fa-solid fa-xmark"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <i class="fa-solid fa-bars"></i>
             </nav>
             <div class="header-text">
                 <p>UI/UX Designer</p>
@@ -41,9 +41,9 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem magnam atque officiis. Recusandae repellat possimus assumenda non. Odio rem minima et. Fugiat rerum illo rem reprehenderit natus suscipit corrupti ab.</p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link" onclick="opentab(event,'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event,'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event,'education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
@@ -139,10 +139,10 @@
                     <p><i class="fa-solid fa-envelope"></i>sahilrazput18@gamil.com</p>
                     <p><i class="fa-solid fa-square-phone"></i>6388445028</p>
                     <div class="social-icons">
-                        <a href="https://www.facebook.com/arrow.archer.79/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/Sahilxrajput?tab=repositories"><i class="fa-brands fa-github"></i></a>
                         <a href="https://www.instagram.com/saahil_rajpoot/"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://x.com/SaahilxRajput?t=l4Z45s4Vwp_lUTVe2AgJww&s=35"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/sahil-razput-b73702344/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/sahil-rajput-b73702344/"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                     <a href="/my-cv.pdf" download class="btn btn2">Download CV</a>
                 </div>
@@ -157,22 +157,10 @@
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright @ Sahil. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials </p>
+            <p>Copyright @ Sahil Rajput. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials </p>
         </div>
        </div>
-       <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwcAx_Ag4KrChLVUQTmn5qP_sRD6EG12h0MtCK8gKiDFEN05xYCwHdcL4X4d4GkmfTa/exec'
-        const form = document.forms['submit-to-google-sheet']
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
-
-    
+     
    <script src="script.js"></script> 
 </body>
 </html>
